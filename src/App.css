@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Pattaya&family=Roboto:wght@300&display=swap');
+body{
+    background-color: rgb(11, 17, 34);
+    
+}
+
+
+
+.pattayaFont{
+    font-family: 'Pattaya', sans-seri ;
+}
+.appFont{
+    font-family: 'Roboto', sans-serif;
+}
