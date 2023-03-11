@@ -2,12 +2,18 @@ import React from 'react'
 
 const IntroTask = () => {
   return (
-    <div className='h-[11rem] bg-gradient-to-r from-[#222688] to-purple-500 rounded-3xl px- py-[1.8rem]'>
+    <div className='lg:h-[6rem]  lg:w-[27rem] md:w-[33rem] md:h-[6rem]
+    rounded-3xl px-[1.2rem] py-[1rem]
+    bg-gradient-to-r  from-[#022aaf] to-[#223796c9]
+    '>
     <div className=' h-full px-5 flex '>
-        <img src="./avatar.jpg" className=' object-contain h-[80px] rounded-full' alt="avatar" />
-        <div className=' w-[53%] h-[80px] pl-[0.8rem] pt-[0.8rem]'>
-            <p className='appFont descFont text-[28px] text-[#CDC6F5]  leading-5'>Hey 👋 <span className='text-[#ffffff]  tracking-wider font-bold'>Faheem Khan</span></p>
-            <p className='appFont descFont text-[22px] text-[#CDC6F5] ml-[1.8rem]'>set your<span className='text-[#ffffff]  tracking-wider font-bold'> Week 02 </span> Task</p>
+        <img src="./avatar.jpg" className=' object-contain h-[65px] rounded-full' alt="avatar" />
+        <div className='w-[19rem] h-[80px] pl-[0.8rem] '>
+            <div>
+                <p className='appFont descFont  text-[24px] text-[#CDC6F5] text-center mr-6  leading-5'>Wellcome Back </p>
+                <p className='appFont  text-[28px] text-[#ffffff] ml-2  tracking-wider font-bold'>👋 Faheem Khan</p>
+            </div>
+          
 
         </div>
     </div>

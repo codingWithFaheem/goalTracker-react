@@ -1,22 +1,21 @@
-import './App.css';
-import Home from './components/Home';
-import React , {useState} from 'react'
-import SidebarNav from './components/SidebarNav';
+import './App.css'; 
+import React  from 'react'
+import {SidebarNav , Home} from './components/';
 import { BrowserRouter as Router , Routes ,Route    } from 'react-router-dom';
-import WeekTasks from './components/DaysTask';
-// import GoalTrackerData from './components/GoalTrakerData ';
+import data from  './data';
 function App() {
-    return (
+ 
+  return (
     <Router>
-          <div className="app flex   w-[46%] h-[54vh] pr-[1.8rem]  m-auto mt-[10rem] bg-[#CDC6F5] rounded-[12px]">
-                        <SidebarNav />
-                        <Routes>
-                          <Route path="/" element={<Home />} />
-                            
-                          <Route path="/week-1" element={<WeekTasks />} />
-                        </Routes>
+          <div className="app flex  h-[100vh] pr-[1.8rem]  m-auto  p-8 bg-[#03072e] rounded-[12px]">
+                 <SidebarNav />
+                 <Routes>
+                  <Route path="/" element={<Home data = {data} />} />
+                  
+                  
+                  </Routes>   
           </div>
-    </Router>
+  </Router>
   );
 }
 
