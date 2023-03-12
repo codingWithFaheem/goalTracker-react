@@ -2,7 +2,7 @@ import React from 'react'
 
 const IntroTask = () => {
   return (
-    <div className='lg:h-[6rem]  lg:w-[27rem] md:w-[33rem] md:h-[6rem]
+    <div className='md:w-[27.8rem] md:h-[6rem]
     rounded-3xl px-[1.2rem] py-[1rem]
     bg-gradient-to-r  from-[#022aaf] to-[#223796c9]
     '>
