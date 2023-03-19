@@ -19,7 +19,7 @@ module.exports = {
        },
       extend: {
             colors : {
-              'shadow-blue':"#16216d"
+              'ratio-blue':"#a36bd8"
             }
       },
     },

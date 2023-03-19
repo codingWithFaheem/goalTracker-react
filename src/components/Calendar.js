@@ -3,11 +3,10 @@ import Day from './modules/Day'
 
 const Calendar = ({data}) => {
   const currentDate =  new Date().getDate().toString() ;
-
   return (
     <div className='    md:h-[24rem]
      px-[1rem] py-[1rem] pb-[2.5rem] 
-    bg-gradient-to-b  from-[#022aaf] to-[#223796c9]
+    bg-gradient-to-b  from-[rgb(2,42,175)] to-[#223796c9]
     rounded-2xl'> 
         <div className='flex  justify-between'> 
           <img src="./calendar.png" className='object-contaub md:h-[70px]' alt="" />
