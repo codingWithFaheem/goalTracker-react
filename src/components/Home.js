@@ -1,10 +1,12 @@
-import      { useState }           from   'react';
+import      { useState , useEffect }           from   'react';
 import      Calendar               from   './Calendar';
 import      IntroTask              from   './IntroTask';
 import      twClassesData          from   './TailwindClassesData';
 import      {IoMdAdd as AddIcon}   from    'react-icons/io'
 import TaskSection from './TaskSection';
-
+const  getTaskFromLocalStorage = () => {
+  
+}
 const Home = ({data}) => {
 
     const    [tasks , setTasks] = useState([]);
@@ -12,7 +14,7 @@ const Home = ({data}) => {
     const    [isPopup , setPop] = useState(false);
     const    {div_1, div_2 ,div_3 ,adIcon} = twClassesData.main
    
-    const addTask = () =>{
+      const addTask = () =>{
         const newTask = {
             task :task ,
             isTaskComplete : false ,
@@ -20,7 +22,7 @@ const Home = ({data}) => {
         const allNewTask = [...tasks , newTask] ;
         setTasks(allNewTask)
         setTask("") ;
-        console.log(tasks)
+    
         setPop(false)
         
       }
@@ -29,6 +31,18 @@ const Home = ({data}) => {
     updatedTasks[index].isTaskComplete = true;
     setTasks(updatedTasks);
   };
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
+
+  // Load the tasks from local storage when the component mounts
+  useEffect(() => {
+    const storedTasks = JSON.parse(localStorage.getItem('tasks'));
+    if (storedTasks) {
+      setTasks(storedTasks);
+    }
+  }, []);
+
     return (
 
 
